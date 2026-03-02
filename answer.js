@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 
 let result = [];
 
@@ -14,7 +14,5 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 
-// Write to output.json
-fs.writeFileSync('output.json', JSON.stringify(result, null, 2));
-
-console.log("output.json generated! 🎉");
+fs.writeFileSync('output.json', JSON.stringify(result, null, 1));
+console.log("Output.json is created");
